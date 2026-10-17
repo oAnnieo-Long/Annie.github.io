@@ -1,0 +1,30 @@
+.text-cursor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.text-cursor.page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.text-cursor__layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1200;
+  overflow: hidden;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.text-cursor__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #b7ff3b;
+  white-space: pre;
+  will-change: transform, opacity;
+}
